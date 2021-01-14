@@ -1,0 +1,62 @@
+{
+	"type": "modal",
+	"title": {
+		"type": "plain_text",
+		"text": "NPSbot admin area",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Done",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "If you got this far, you prolly an admin, so go on!"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Set NPS channel",
+						"emoji": true
+					},
+					"action_id": "setNPSchannel"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Admin users manager",
+						"emoji": true
+					},
+					"action_id": "setAdminUsers"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Comming soon",
+						"emoji": true
+					},
+					"action_id": "action2"
+				}
+			]
+		}
+	]
+}

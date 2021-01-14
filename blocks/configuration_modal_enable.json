@@ -1,0 +1,88 @@
+{
+	"title": {
+		"type": "plain_text",
+		"text": "NPSbot configuration",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit"
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Close",
+		"emoji": true
+	},
+	"type": "modal",
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Bot enables notifications for each new NPS! It will notify you in slack channel once NPS is received :)"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Enable notifications for yourself:",
+				"emoji": true
+			}
+		},
+		{
+			"type": "actions",
+			"block_id": "enablenotifications",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Forever",
+						"emoji": true
+					},
+					"style": "primary",
+					"action_id": "enableforever"
+				},
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "For 8 hours",
+						"emoji": true
+					},
+					"style": "primary",
+					"action_id": "enable8hours"
+				}
+			]
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"block_id": "enablenotificationsforother",
+			"element": {
+				"action_id": "enable8hoursforother",
+				"type": "multi_users_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select users",
+					"emoji": true
+				}
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Enable notifications for someone else:",
+				"emoji": true
+			},
+			"hint": {
+				"type": "plain_text",
+				"text": "Press submit once users are selected."
+			}
+		}
+	]
+}

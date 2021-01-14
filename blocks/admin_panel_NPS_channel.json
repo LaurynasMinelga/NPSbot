@@ -1,0 +1,38 @@
+{
+	"type": "modal",
+	"submit": {
+		"type": "plain_text",
+		"text": "Set",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"title": {
+		"type": "plain_text",
+		"text": "NPSbot admin area",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select the channel where NPS notifications will appear"
+			},
+			"accessory": {
+				"type": "channels_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a user",
+					"emoji": true
+				}
+			}
+		}
+	]
+}

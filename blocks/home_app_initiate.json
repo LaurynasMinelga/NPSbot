@@ -1,0 +1,30 @@
+{
+	"type": "home",
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "NPS bot will take are of your NPS notifications! Here you can test the bot out with just a click:"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Test NPS",
+						"emoji": true
+					},
+					"style": "danger",
+					"action_id": "initiateNPS"
+				}
+			]
+		}
+	]
+}
